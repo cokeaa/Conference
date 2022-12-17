@@ -18,7 +18,7 @@
     <body>
    <?php 
     //require_once 'db/conn.php';
-   // $results = $crud->getSession();
+  
 ?>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -116,7 +116,7 @@
 </div>
 <section class="my-4">
     <div class="py-4">
-        <h2 class="text-center">Overview</h2>
+       
           </div>
           <div class="container-fluid">
             <div class="row">
@@ -135,12 +135,3 @@
           <?php require_once 'includes/footer.php';
  ?>
           </html>
-<!--<?php 
-    $title = 'Index';
-    require_once 'includes/header.php';
-    require_once 'db/conn.php';
-    $results = $crud->getConference();
-?>
-
-    <?php require_once 'includes/footer.php';
- ?>

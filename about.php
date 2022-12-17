@@ -1,7 +1,7 @@
 <?php 
     $title = 'About Us';
     require_once 'includes/header.php';
-   require_once 'db/conn.php';
+   //require_once 'db/conn.php';
    ?>
 
 <h1 class="text-center">About Us </h1>
@@ -48,6 +48,7 @@ Be part of this special event and join your peers May 11-14 in Wait-a Bit, Clare
 </ul>
       </br>
 </br>
+
 </div>
 <?php require_once 'includes/footer.php';
  ?>

@@ -1,7 +1,7 @@
 
 <div class="container">
    </div>
-  <div class="card-body">
+   <div class="container-fluid">
     <blockquote class="blockquote mb-0 bg-info ">
     <p class="text-center"> &copy; G-Conference -All Rights Reserved <?php echo date('Y');?>
   </p>
