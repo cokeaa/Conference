@@ -1,7 +1,7 @@
 <?php 
     $title = 'About Us';
     require_once 'includes/header.php';
-   //require_once 'db/conn.php';
+   require_once 'db/conn.php';
    ?>
 
 <h1 class="text-center">About Us </h1>
