@@ -45,7 +45,7 @@ include_once 'includes/session.php'?>
         <a class="nav-link active" href="index.php">Home<span class="sr-only"></span></a></li>
 </ul>
 </li>
-<a class="nav-link" href="viewrecords.php">About Us</a>
+<a class="nav-link" href="index.php">About Us</a>
 <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Program
