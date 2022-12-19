@@ -42,7 +42,7 @@
             <?php echo $_POST['firstname'] . ' ' . $_POST['lastname']; ?>
             </h5>
             <h6 class="card-subtitle mb-2 text muted">
-                    <?php echo $session['name']; ?>
+                    <?php echo $sessionType['name']; ?>
             </h6>  
             <p class="card-text">   
                 Gender: <?php echo $_POST['gender']; ?>

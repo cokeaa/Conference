@@ -8,23 +8,22 @@
             $this->db= $conn;
         }
             //function to insert a new record into the conference(participant) database
-        public function insertConference($fname, $lname, $gender, $session,$avatar_path,$address,$email, $company){
+        public function insertConference($fname, $lname, $gender, $sessionType,$avatar_path,$address,$email, $company){
             try {
                 //define sql statement to be executed
-                $sql = "INSERT INTO participant (firstname,lastname,gender,session_id,avatar_path,address,emailaddress,
-                companyname)VALUES(:fname,:lname,:gender,:session,:avatar_path,:address,:email,:company)";
+                $sql = "INSERT INTO participant (firstname,lastname,gender,avatar_path,address,emailaddress,
+                companyname,session_id,)VALUES(:fname,:lname,:gender,:avatar_path,:address,:email,:company,:session)";
                 //prepare the sql statement to be excecution
                 $stmt = $this->db->prepare($sql);
                 //bind all placeholders to the actual values
                 $stmt->bindparam(':fname',$fname);
                 $stmt->bindparam(':lname',$lname);
                 $stmt->bindparam(':gender',$gender);
-                $stmt->bindparam(':session',$session);
                 $stmt->bindparam(':avatar_path',$avatar_path);
                 $stmt->bindparam(':address',$address);
                 $stmt->bindparam(':email',$email);
                 $stmt->bindparam(':company',$company);
-                
+                $stmt->bindparam(':session',$sessionType);
 
                 //execute statement
                 $stmt->execute();
@@ -36,11 +35,11 @@
              }             
         }
 
-        public function editConference($id, $fname, $lname, $gender, $session,$address, $email, $company){
+        public function editConference($id, $fname, $lname, $gender, $sessionType,$address, $email, $company){
            try{
                   
            $sql = "UPDATE `participant` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,
-            `session_id`=:session,`address`=:address,`emailaddress`=:email,`company`=:company WHERE participant_id = :id";
+            `address`=:address,`emailaddress`=:email,`company`=:company ,`session_id`=:session,WHERE participant_id = :id";
                         
             $stmt = $this->db->prepare($sql);
             //bind all placeholders to the actual values
@@ -48,10 +47,10 @@
                 $stmt->bindparam(':fname',$fname);
                 $stmt->bindparam(':lname',$lname);
                 $stmt->bindparam(':gender',$gender);
-                $stmt->bindparam(':session',$session);
                 $stmt->bindparam(':address',$address);
                 $stmt->bindparam(':email',$email);
                 $stmt->bindparam(':company',$company);
+                $stmt->bindparam(':session',$sessionType);
             //execute statement
             $stmt->execute();
             return true;
@@ -75,7 +74,7 @@
         }
         public function getParticipantDetails($id){
             try{
-            $sql = "select * from participant a inner join session s on a.session_id =s.session_id where session_id = :id";
+            $sql = "SELECT* From participant a inner join session s on a.session_id =s.session_id where session_id = :id";
             $stmt = $this->db->prepare($sql);
             $stmt->bindparam(':id',$id);
             $stmt->execute();
