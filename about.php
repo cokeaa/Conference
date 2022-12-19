@@ -9,8 +9,14 @@
         <div class="row justify-content-center text-center">
             <div class="col-10 py-5">
                 <h2>TALENT ACQUISITION & RETENTION * WORKPLACE CULTURE * </h2>
-                <p class="lead">G-Conference has served millions of HR professionals who-in turn-helped/impacted the lives of BILLIONS of workers across the world. As we come together for Conference 2022, we will work together to tackle the continuous challenges facing our industry. Join us to enhance your skills, evolve with industry changes and get the insights and best practices you need to continuously make a positive impact on the workplace. Your work. Your passion. Your career as an HR professional.
-Be part of this special event and join your peers May 11-14 in Wait-a Bit, Clarendon and online for Conference 2022.</p>
+                <p class="lead">G-Conference has served millions of HR professionals who-in turn-helped/impacted the lives of BILLIONS of workers across the world. 
+                    As we come together for Conference 2022, we will work together to tackle the continuous challenges facing our industry. Join us to enhance your skills, 
+                    evolve with industry changes and get the insights and best practices you need to continuously make a positive impact on the workplace. Your work. Your passion. 
+                    Your career as an HR professional.With more than 200 sessions, G–Conference gives you in-depth insights into all things business.
+                     From the basics every HR professional needs (no matter the role, tenure or industry), to offerings for C-suite leaders, 
+                     to the latest ideas that are changing the workplace landscape, G - Conference is sure to help you stay on top of what’s to come in the world of work.
+                      No matter where you are in your career.</p>
+<p>Be part of this special event and join your peers May 11-14 in Wait-a Bit, Clarendon and online for Conference 2022.</p>
 </br>
 <h2>MANAGE UP-Steps To Convince Your Boss To Send You To G-Conference</h2>
 <ul>

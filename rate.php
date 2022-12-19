@@ -3,7 +3,7 @@
 <?php 
     $title = 'Rate';
     require_once 'includes/header.php';
-   // require_once 'db/conn.php';
+   require_once 'db/conn.php';
   ?>
         <h2 class="text-center">PASS TYPE</h2>
         </br>

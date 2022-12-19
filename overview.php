@@ -9,7 +9,7 @@
         <div class="row justify-content-left text-center">
             <div class="col-10 py-5">
                 <h2>ONE CONFERENCE. MANY CURATED EXPERIENCES. </h2>
-                <p class="lead">GWith more than 200 sessions, G–Conference gives you in-depth insights into all things business.
+                <p class="lead">With more than 200 sessions, G–Conference gives you in-depth insights into all things business.
                      From the basics every HR professional needs (no matter the role, tenure or industry), to offerings for C-suite leaders, 
                      to the latest ideas that are changing the workplace landscape, G - Conference is sure to help you stay on top of what’s to come in the world of work.
                       No matter where you are in your career.</p>
