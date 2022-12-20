@@ -7,47 +7,18 @@
     $results = $crud->getSession();
    
 ?>
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="uploads\Conferences-1200x627.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
-</div>
+    <img class="d-block w-100 h-50" src="uploads\Conferences-1200x627.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="uploads\conferences-events-banner@2x-scaled-e1652808678149.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
-</div>
+    <img class="d-block w-100" src="uploads\conferences-events-banner@2x-scaled-e1652808678149.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="uploads\VISC-Conference-audience-1024x524.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
-</div>
+    <img class="d-block w-100" src="uploads\VISC-Conference-audience-1024x524.jpg" alt="Third slide">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 <section class="my-4">
     <div class="py-4">
@@ -78,7 +49,7 @@
           </div>
           </div>
           </div>
-          </body>
+</section>
           <?php require_once 'includes/footer.php';
  ?>
-          </html>
+        
