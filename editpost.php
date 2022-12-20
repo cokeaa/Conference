@@ -8,14 +8,13 @@ if(isset($_POST['submit'])){
     $fname= $_POST['firstname'];
     $lname= $_POST['lastname'];
     $gender= $_POST['gender'];
-    $session = $_POST['session'];
     $address = $_POST['address'];
     $email = $_POST['email'];
     $company= $_POST['company'];
-
+    $sessionType = $_POST['session'];
 
 //Call crud function
-$result = $crud->editConference($id, $fname, $lname, $gender, $session,$address, $email, $company);
+$result = $crud->editPartcipant($id, $fname, $lname, $gender, $sessionType,$address, $email, $company);
 //Redirect to index.php
 if($result){
     header("Location: viewrecords.php");

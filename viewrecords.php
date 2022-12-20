@@ -5,7 +5,7 @@
     require_once 'db/conn.php';
 
 
-   $results = $crud->getConference();
+   $results = $crud->getParticipant();
 ?>
 <table class = "table">
     <tr>

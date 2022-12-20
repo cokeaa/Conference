@@ -8,11 +8,11 @@
             $this->db= $conn;
         }
             //function to insert a new record into the conference(participant) database
-        public function insertConference($fname, $lname, $gender, $sessionType,$avatar_path,$address,$email, $company){
+        public function insertParticipant($fname, $lname, $gender, $avatar_path,$address,$email, $company,$sessionType){
             try {
                 //define sql statement to be executed
                 $sql = "INSERT INTO participant (firstname,lastname,gender,avatar_path,address,emailaddress,
-                companyname,session_id,)VALUES(:fname,:lname,:gender,:avatar_path,:address,:email,:company,:session)";
+                company,session_id)VALUES(:fname,:lname,:gender,:avatar_path,:address,:email,:company,:sessionType)";
                 //prepare the sql statement to be excecution
                 $stmt = $this->db->prepare($sql);
                 //bind all placeholders to the actual values
@@ -23,7 +23,7 @@
                 $stmt->bindparam(':address',$address);
                 $stmt->bindparam(':email',$email);
                 $stmt->bindparam(':company',$company);
-                $stmt->bindparam(':session',$sessionType);
+                $stmt->bindparam(':sessionType',$sessionType);
 
                 //execute statement
                 $stmt->execute();
@@ -35,11 +35,11 @@
              }             
         }
 
-        public function editConference($id, $fname, $lname, $gender, $sessionType,$address, $email, $company){
+        public function editParticipant($id, $fname, $lname, $gender, $sessionType,$address, $email, $company){
            try{
                   
            $sql = "UPDATE `participant` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,
-            `address`=:address,`emailaddress`=:email,`company`=:company ,`session_id`=:session,WHERE participant_id = :id";
+            `address`=:address,`emailaddress`=:email,`company`=:company ,`session_id`=:sessionType,WHERE participant_id = :id";
                         
             $stmt = $this->db->prepare($sql);
             //bind all placeholders to the actual values
@@ -61,7 +61,7 @@
            }
         }
 
-        public function getConference(){
+        public function getParticipant(){
             try{
             $sql = "SELECT * FROM `participant` a inner join session s on a.session_id =s.session_id;";
             $result = $this->db->query($sql);

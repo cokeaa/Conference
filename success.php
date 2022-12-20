@@ -9,22 +9,21 @@
         $fname= $_POST['firstname'];
         $lname= $_POST['lastname'];
         $gender= $_POST['gender'];
-        $session = $_POST['session'];
         $address = $_POST['address'];
         $email = $_POST['email'];
         $company= $_POST['company'];
-
+        $sessionType = $_POST['session'];
     
         $orig_file = $_FILES["avatar"]["tmp_name"];
         $ext = pathinfo($_FILES["avatar"]["name"],PATHINFO_EXTENSION);
         $target_dir = 'uploads/';
-        $destination = "$target_dir$contact.$ext";
+        $destination = "$target_dir$email. $ext";
         move_uploaded_file($orig_file,$destination);
 
       
         //Call function to insert and track if success or not
-        $isSuccess = $crud->insertConference($fname, $lname, $gender, $session,$destination,$address,$email, $company);
-        
+        $isSuccess = $crud->insertParticipant($fname, $lname, $gender, $sessionType,$destination,$address,$email, $company);
+        $sessionType = $crud->getSessionById($sessionType);
     if($isSuccess){
         SendEmail::SendMail($email, 'Welcome to G-Conference 2022', 'You have registered successfully for Coference 2022');
         include 'includes/successmessage.php';
