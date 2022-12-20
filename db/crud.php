@@ -39,7 +39,7 @@
            try{
                   
            $sql = "UPDATE `participant` SET `firstname`=:fname,`lastname`=:lname,`gender`=:gender,
-            `address`=:address,`emailaddress`=:email,`company`=:company ,`session_id`=:sessionType,WHERE participant_id = :id";
+            `address`=:address,`emailaddress`=:email,`company`=:company ,`session_id`=:sessionType WHERE participant_id = :id";
                         
             $stmt = $this->db->prepare($sql);
             //bind all placeholders to the actual values
